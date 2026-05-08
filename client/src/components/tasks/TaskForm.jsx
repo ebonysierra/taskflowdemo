@@ -33,7 +33,7 @@ export default function TaskForm({ onSubmit, onCancel, teamMembers, projects }) 
       </div>
       <div className="form-group">
         <label>Description</label>
-        <textarea value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Optional description" rows={2} />
+        <textarea value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Add more context, links, or notes..." rows={2} />
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--space-4)' }}>
         <div className="form-group">
@@ -82,7 +82,7 @@ export default function TaskForm({ onSubmit, onCancel, teamMembers, projects }) 
         </div>
         <div className="form-group">
           <label>Estimated Hours</label>
-          <input type="number" value={estimatedHours} onChange={(e) => setEstimatedHours(e.target.value)} min="0" step="0.5" />
+          <input type="number" value={estimatedHours} onChange={(e) => setEstimatedHours(e.target.value)} min="0" step="0.5" placeholder="e.g. 2.5" />
         </div>
       </div>
       <div style={{ display: 'flex', gap: 'var(--space-2)', justifyContent: 'flex-end', marginTop: 'var(--space-4)' }}>
